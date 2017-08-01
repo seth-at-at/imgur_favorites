@@ -1,0 +1,25 @@
+body{ background-color: #141518; }
+.green{ background-color: #1BB76E; }
+.grey{ background-color: #34373C; }
+
+a:link {
+    color: black;
+    text-decoration: none;
+
+}
+
+#welcome_message {
+  font-size: 20px;
+  color: White;
+  text-align: center;
+  border: 5px solid gray;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+}
+
+#loginButton {
+  background-color: #1BB76E;
+  font-size: 20px;
+}
+.homeLogo {text-align: center;}
