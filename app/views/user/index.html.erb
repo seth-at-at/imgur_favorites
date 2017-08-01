@@ -2,18 +2,18 @@
   <h1>Your Folders!</h1>
 </div>
 <center>
-  <div class="home_button">
+  <div class="home_button" tabindex="0">
     <%= link_to "All Favorites", favorites_path %>
   </div>
   <hr>
 
-<div class="newFolder">
+<div class="newFolder" tabindex="0">
   <%= link_to "Create New Folder!", new_folder_path %>
 </div> <br><br>
 
 <% @user.folders.each do |folder|  %>
-  <div class="folder_links">
-    <div id="folder<%=folder.id%>">
+  <div class="folder_links" tabindex="0">
+    <div id="folder<%=folder.id%>" tabindex="0">
       <%= link_to folder.name, folder_path(folder)%>
     </div>
   </div>

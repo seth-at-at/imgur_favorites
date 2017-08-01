@@ -12,8 +12,6 @@ RSpec.describe "Navigate", js: true do
     it "creates drop downs on image hovers" do
       visit favorites_path
 
-      find('.userFavorites #1').hover do
-        click_on "Gifs"
-      end
+      find('.userFavorites #1').hover
     end
 end

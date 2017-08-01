@@ -1,13 +1,13 @@
-<div class="home_button">
+<div class="home_button" tabindex="0">
   <%= link_to "Home", dashboard_path %>
 </div>
-<div class="home_button">
+<div class="home_button" tabindex="0">
   <%= link_to "All Favorites", favorites_path %>
 </div>
 <hr>
-<div class="userFavorites">
+<div class="userFavorites" tabindex="0">
   <% @favorites.each do |f| %>
-    <div class="favorites" id="#{f.id}">
+    <div class="favorites" id="#{f.id}" tabindex="0">
       <a href="<%= f.link %>"><%= image_tag f.link %></a>
     </div>
   <% end %>
