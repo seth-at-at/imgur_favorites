@@ -4,10 +4,11 @@
 <div class="home_button">
   <%= link_to "All Favorites", favorites_path %>
 </div>
+<hr>
 <div class="userFavorites">
   <% @favorites.each do |f| %>
     <div class="favorites" id="#{f.id}">
-      <%= image_tag f.link %>
+      <a href="<%= f.link %>"><%= image_tag f.link %></a>
     </div>
   <% end %>
 </div>

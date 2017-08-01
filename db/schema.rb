@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170726202517) do
+ActiveRecord::Schema.define(version: 20170801090154) do
 
   create_table "favorites", force: :cascade do |t|
     t.string  "image_id"
@@ -18,6 +18,11 @@ ActiveRecord::Schema.define(version: 20170726202517) do
     t.string  "description"
     t.string  "link"
     t.integer "images_count"
+  end
+
+  create_table "favorites_folders", force: :cascade do |t|
+    t.integer "folder_id"
+    t.integer "favorite_id"
   end
 
   create_table "favorites_users", id: false, force: :cascade do |t|

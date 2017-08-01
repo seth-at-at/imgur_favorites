@@ -1,11 +1,10 @@
 class Folder < ApplicationRecord
   belongs_to :user
+  has_many :favorites, through: :favorites_folders
 
-  def favorites
-    []
-  end
-
-  def add_to_favorites(image)
-    favorites << Favorite.find(image)
+  def images
+    FavoritesFolders.where(folder_id: self.id).map do |ff|
+      Favorite.find(ff.favorite_id)
+    end
   end
 end

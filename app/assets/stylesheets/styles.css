@@ -8,6 +8,10 @@ a:link {
 
 }
 
+a {
+  color: black;
+}
+
 #welcome_message {
   font-size: 20px;
   color: White;

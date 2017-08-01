@@ -6,9 +6,21 @@
     <%= link_to "All Favorites", favorites_path %>
   </div>
   <hr>
+
 <div class="newFolder">
-    <%= link_to "Create New Folder!", new_folder_path %>
-</div> <br> <br> <br>
+  <%= link_to "Create New Folder!", new_folder_path %>
+</div> <br><br>
+
+<!-- <div id="welcome_message" style="display:none;">
+  <hr>
+  <form class="folder" action="index.html" method="post">
+    <label for="folder">Name</label>
+    <input type="text"></input>
+    <button type="button" name="button">Submit</button>
+  </form>
+  <hr>
+</div> <br><br> -->
+
 <% @user.folders.each do |folder|  %>
   <div class="folder_links">
     <div id="folder#{folder.id}">
