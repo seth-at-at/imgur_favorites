@@ -6,6 +6,6 @@ class Folder < ApplicationRecord
   end
 
   def add_to_favorites(image)
-    favorites << image
+    favorites << Favorite.find(image)
   end
 end

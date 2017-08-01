@@ -4,9 +4,18 @@
   </div> <br>
   <hr>
   <div class="userFavorites">
-    <% @favorites.each do |f| %>
-      <div class="favorites" id="#{f.id}">
-        <%= image_tag f.link %>
+    <% @favorites.each do |fa| %>
+    <div class="dropdown">
+      <button class="dropbtn">
+      <div class="favorites" id="#{fa.id}">
+        <%= image_tag fa.link %>
+      </div>
+      </button>
+        <div class="dropdown-content">
+          <% @folders.each do |fo| %>
+            <%= link_to fo.name.upcase, folder_path(fo, favorite: fa.id) %>
+          <% end %>
+        </div>
       </div>
     <% end %>
   </div>

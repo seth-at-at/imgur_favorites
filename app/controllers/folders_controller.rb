@@ -10,6 +10,11 @@ class FoldersController < ApplicationController
 
   def show
     @folder = Folder.find(params[:id])
+    if params[:favorite]
+      @folder.add_to_favorites(params[:favorite])
+    end
+    binding.pry
+    @favorites = @folder.favorites
   end
 
   def index
