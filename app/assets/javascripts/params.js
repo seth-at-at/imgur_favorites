@@ -1,5 +1,5 @@
 function sendParams() {
-  let params = location.hash.split("#")[1]
+  var params = location.hash.split("#")[1]
   $.ajax({
     method: 'POST',
     data: {params: params},
@@ -8,7 +8,7 @@ function sendParams() {
 }
 
 function clearSession() {
-  let params = "clear"
+  var params = "clear"
   $.ajax({
     method: 'GET',
     data: {params: params},
