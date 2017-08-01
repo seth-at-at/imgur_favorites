@@ -53,6 +53,7 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'faker', :git => 'git://github.com/stympy/faker.git', :branch => 'master'
+  gem 'database_cleaner'
 end
 
 group :development do

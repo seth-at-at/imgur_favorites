@@ -6,7 +6,7 @@ class ImgurService
   end
 
   def authorize
-    "https://api.imgur.com/oauth2/authorize?client_id=#{@id}&response_type=token"
+    "https://api.imgur.com/oauth2/authorize?client_id=f2069059417d53d&response_type=token"
   end
 
   def token(t)
