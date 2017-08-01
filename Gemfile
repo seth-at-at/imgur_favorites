@@ -8,8 +8,6 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.3'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -51,6 +49,7 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'faker', :git => 'git://github.com/stympy/faker.git', :branch => 'master'
+  gem 'sqlite3'
 end
 
 group :development do
