@@ -10,11 +10,15 @@ class SessionsController < ApplicationController
   end
 
   def create
-    logger.debug("does this work")
-    logger.warn "does this work 2"
     par = param_arr(params[:params])
+    logger.debug(par) # DEBUG
+
     favorites = ImgurService.new.favorites(par["account_username"], par["access_token"])
+    logger.debug(favorites) # DEBUG
+
     user = User.find_or_create_by(username: par["account_username"])
+    logger.debug(user) # DEBUG
+
     session[:user_id] = user.id
     user.update(strong_params(par))
     update_favorites(favorites, user)
