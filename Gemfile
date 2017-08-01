@@ -10,6 +10,7 @@ end
 gem 'rails', '~> 5.0.3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -50,7 +51,6 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'faker', :git => 'git://github.com/stympy/faker.git', :branch => 'master'
-  gem 'sqlite3'
 end
 
 group :development do
