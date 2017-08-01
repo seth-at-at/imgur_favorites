@@ -1,24 +1,32 @@
-# README
+### Imgur Favorites Folders
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+*  An application that allows you to sort images from the imgur website. An account for imgur is required to use the site.
 
-* Ruby version
+Backend available at:
 
-* System dependencies
 
-* Configuration
+## To install/run locally:
 
-* Database creation
+Clone down the repo
 
-* Database initialization
+```shell
 
-* How to run the test suite
+$ git clone git@github.com:seth-at-at/imgur_favorites.git
 
-* Services (job queues, cache servers, search engines, etc.)
+```
 
-* Deployment instructions
+Set up the repo, start `localhost`:
 
-* ...
+```shell
+
+$ cd imgur_favorites
+$ bundle install
+$ rake db:migrate
+$ rails s
+
+```
+
+Open up on `localhost`:
+
+```
