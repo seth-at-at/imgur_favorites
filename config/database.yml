@@ -15,13 +15,12 @@ test: &TEST
   username:
   password:
 
-production:
+development:
   adapter: postgresql
-  encoding: utf8
-  database: project_production
-  pool: 5
-  username:
-  password:
+  host: localhost
+  username: user
+  database: app-dev
+
 
 cucumber:
   <<: *TEST
