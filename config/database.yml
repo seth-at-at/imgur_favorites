@@ -15,23 +15,12 @@ test: &TEST
   username:
   password:
 
-development:
+production:
   adapter: postgresql
   host: localhost
   username: user
-  database: project_development
+  database: project_production
 
 
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  # For details on connection pooling, see rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: 5
-  username: my_username
-  password: my_password
-
-
-production:
-  <<: *default
-  database: "project_production"
+cucumber:
+  <<: *TEST
