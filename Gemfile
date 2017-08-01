@@ -24,7 +24,6 @@ gem 'figaro'
 gem 'faraday'
 gem 'httparty'
 gem "react-rails"
-gem 'sqlite3'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -51,6 +50,7 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'faker', :git => 'git://github.com/stympy/faker.git', :branch => 'master'
+  gem 'sqlite3'
 end
 
 group :development do
