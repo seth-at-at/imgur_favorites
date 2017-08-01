@@ -1,0 +1,207 @@
+@height:40px;
+@spacing:10px;
+@select-colour:#2875C7;
+@font-size:14px;
+@border-colour:#DDD;
+
+div.dropdown-container {
+  &.show>div.dropdown-list {
+    .transform(scale(1, 1));
+  }
+
+  @icon-width:14px;
+
+  >div.dropdown-display {
+    float:left;
+    width:100%;
+    background:white;
+    height:@height;
+    cursor:pointer;
+    border:solid 1px @border-colour;
+    .border-box;
+
+    >* {
+      float:left;
+      height:100%;
+      .vertical-centre(@height);
+    }
+
+    >span {
+      font-size:@font-size;
+      width:100%;
+      position:relative;
+      .border-box;
+      padding-right:@icon-width+@spacing*2;
+      padding-left:@spacing;
+    }
+
+    >i {
+      position:relative;
+      width:@icon-width;
+      margin-left:(@spacing+@icon-width)*-1;
+      font-size:1.125em;
+      font-weight:bold;
+      padding-right:@spacing;
+      text-align:right;
+    }
+  }
+
+  >div.dropdown-list {
+    float:left;
+    width:100%;
+    position:relative;
+    width:100%;
+    .transform(scale(1, 0));
+    .transition(-webkit-transform ease 250ms);
+    .transition(transform ease 250ms);
+
+    >div {
+      position:absolute;
+      width:100%;
+      z-index:2;
+      cursor:pointer;
+      background:white;
+
+      >div {
+        float:left;
+        width:100%;
+        padding:0 @spacing;
+        font-size:@font-size;
+        .border-box;
+        border:solid 1px @border-colour;
+        border-top:none;
+
+        @icon-width:20px;
+
+        &:hover {
+          background:#F0F0F0;
+        }
+
+        &.selected {
+          background:@select-colour;
+          color:white;
+        }
+
+        >* {
+          .vertical-centre(@height);
+        }
+
+        >span {
+          float:left;
+          width:100%;
+        }
+      }
+    }
+  }
+}
+body{ background-color: #141518; }
+.green{ background-color: #1BB76E; }
+.grey{ background-color: #34373C; }
+
+a:link {
+    color: black;
+    text-decoration: none;
+
+}
+
+#welcome_message {
+  font-size: 20px;
+  color: White;
+  text-align: center;
+  border: 5px solid gray;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+}
+
+#loginButton {
+  background-color: #1BB76E;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid;
+  border-radius: 25px;
+}
+.homeLogo {text-align: center;}
+
+#are_user {
+  color: white;
+}
+
+#continue {background-color: #1BB76E;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+#back {
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.newFolder {
+  font-size: 20px;
+  background-color: #1BB76E;
+  text-align: center;
+  border: 5px solid #1BB76E;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 1px;
+}
+.newFolder > a {
+  background-color: #1BB76E;
+}
+
+.home_button {
+  font-size: 20px;
+  background-color: #1BB76E;
+  text-align: center;
+  border: 5px solid #1BB76E;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 2px;
+}
+
+.folder_links {
+  font-size: 20px;
+  background-color: #1BB76E;
+  text-align: center;
+  border: 5px solid #1BB76E;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 2px;
+
+}
+
+#userFolders {
+  text-align: center;
+  color: white;
+}
+
+.favorites {
+  display: block;
+  display: inline-block;
+}
+
+img {
+  width: 180px;
+height: 180px;
+line-height: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
