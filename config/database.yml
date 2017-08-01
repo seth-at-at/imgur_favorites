@@ -1,29 +1,27 @@
 
-# development:
-#   adapter: postgresql
-#   encoding: utf8
-#   database: project_development
-#   pool: 5
-#   username:
-#   password:
-#
-# test: &TEST
-#   adapter: postgresql
-#   encoding: utf8
-#   database: project_test
-#   pool: 5
-#   username:
-#   password:
-#
-# development:
-#   adapter: postgresql
-#   host: localhost
-#   username: user
-#   database: project_development
-#
-#
-# cucumber:
-#   <<: *TEST
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: project_development
+  pool: 5
+  username:
+  password:
+
+test: &TEST
+  adapter: postgresql
+  encoding: utf8
+  database: project_test
+  pool: 5
+  username:
+  password:
+
+development:
+  adapter: postgresql
+  host: localhost
+  username: user
+  database: project_development
+
+
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -33,13 +31,6 @@ default: &default
   username: my_username
   password: my_password
 
-development:
-  <<: *default
-  database: "project_development"
-
-test:
-  <<: *default
-  database: "project_test"
 
 production:
   <<: *default
