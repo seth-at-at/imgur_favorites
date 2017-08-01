@@ -1,26 +1,46 @@
 
-development:
+# development:
+#   adapter: postgresql
+#   encoding: utf8
+#   database: project_development
+#   pool: 5
+#   username:
+#   password:
+#
+# test: &TEST
+#   adapter: postgresql
+#   encoding: utf8
+#   database: project_test
+#   pool: 5
+#   username:
+#   password:
+#
+# development:
+#   adapter: postgresql
+#   host: localhost
+#   username: user
+#   database: project_development
+#
+#
+# cucumber:
+#   <<: *TEST
+default: &default
   adapter: postgresql
-  encoding: utf8
-  database: project_development
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
-  username:
-  password:
-
-test: &TEST
-  adapter: postgresql
-  encoding: utf8
-  database: project_test
-  pool: 5
-  username:
-  password:
+  username: my_username
+  password: my_password
 
 development:
-  adapter: postgresql
-  host: localhost
-  username: user
-  database: project_development
+  <<: *default
+  database: "project_development"
 
+test:
+  <<: *default
+  database: "project_test"
 
-cucumber:
-  <<: *TEST
+production:
+  <<: *default
+  database: "project_production"
