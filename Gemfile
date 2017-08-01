@@ -54,6 +54,7 @@ group :development, :test do
   gem 'launchy'
   gem 'faker', :git => 'git://github.com/stympy/faker.git', :branch => 'master'
   gem 'database_cleaner'
+  gem 'selenium-webdriver', '~> 2.53.4'
 end
 
 group :development do

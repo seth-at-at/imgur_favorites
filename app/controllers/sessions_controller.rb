@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   protect_from_forgery except: [:create]
+
   def new
 
   end
@@ -9,6 +10,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+    logger.debug "does this work"
     par = param_arr(params[:params])
     favorites = ImgurService.new.favorites(par["account_username"], par["access_token"])
     user = User.find_or_create_by(username: par["account_username"])
