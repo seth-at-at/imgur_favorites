@@ -7,9 +7,9 @@
     <% @favorites.each do |fa| %>
     <div class="dropdown">
       <button class="dropbtn">
-      <div class="favorites" id="#{fa.id}">
-        <%= image_tag fa.link %>
-      </div>
+        <div class="favorites" id="#{fa.id}">
+          <a href="<%= fa.link %>"><%= image_tag fa.link %></a>
+        </div>
       </button>
         <div class="dropdown-content">
           <% @folders.each do |fo| %>
@@ -18,5 +18,8 @@
         </div>
       </div>
     <% end %>
+    <div class="paginating">
+      <%= will_paginate @favorites %>
+    </div>
   </div>
 </center>

@@ -94,6 +94,13 @@ a {
 
 img {
   width: 180px;
-height: 180px;
-line-height: 0;
+  height: 180px;
+  line-height: 0;
+  animation: 0;
+}
+
+.paginating {
+  background-color: #1BB76E;
+  border: 5px solid #1BB76E;
+  border-radius: 50px;
 }
