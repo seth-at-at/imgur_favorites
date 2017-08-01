@@ -12,6 +12,10 @@ class FoldersController < ApplicationController
     @folder = Folder.find(params[:id])
   end
 
+  def index
+    @folders = Folder.where(user: current_user)
+  end
+
   private
     def folder_params(params)
       params.require(:folder).permit(:name)

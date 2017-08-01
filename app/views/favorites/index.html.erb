@@ -1,7 +1,11 @@
 <center>
+  <div class="home_button">
+    <%= link_to "Home", dashboard_path %>
+  </div> <br>
+  <hr>
   <div class="userFavorites">
     <% @favorites.each do |f| %>
-      <div class="favorites" id="favorite#{f.id}">
+      <div class="favorites" id="#{f.id}">
         <%= image_tag f.link %>
       </div>
     <% end %>

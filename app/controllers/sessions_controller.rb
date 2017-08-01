@@ -38,9 +38,9 @@ class SessionsController < ApplicationController
     def update_favorites(favorites, user)
       favorites.each do |fav|
         fav[:link] = normalize_links(fav[:link], fav)
-        favorite = Favorite.find_or_create_by(image_id: fav[:id])
-        favorite.update(title: fav[:title], description: fav[:description], link: fav[:link], images_count: fav[:images_count])
-        FavoritesUser.create(user_id: user.id, favorite_id: favorite.id)
+        if favorite = Favorite.find_or_create_by(image_id: fav[:id], title: fav[:title], description: fav[:description], link: fav[:link], images_count: fav[:images_count])
+            FavoritesUser.find_or_create_by(user_id: user.id, favorite_id: favorite.id)
+        end
       end
     end
 
