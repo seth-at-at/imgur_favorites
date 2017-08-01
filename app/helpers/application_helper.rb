@@ -1,4 +1,5 @@
 module ApplicationHelper
+
   def imgur_logo
 '    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
     <svg width="91px" height="33px" viewBox="0 0 91 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -23,5 +24,9 @@ module ApplicationHelper
             </g>
         </g>
     </svg>'
+  end
+
+  def users_folders(user)
+    return "You don't seem to have any folders, would you like to create one?" if user.folders.empty?
   end
 end

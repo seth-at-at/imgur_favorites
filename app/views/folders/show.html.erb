@@ -1,0 +1,13 @@
+<div class="home_button">
+  <%= link_to "Home", dashboard_path %>
+</div>
+<div class="home_button">
+  <%= link_to "All Favorites", favorites_path %>
+</div>
+<% @folder.favorites.each do |image|  %>
+  <div class="image_links">
+    <div id="images#{image.id}">
+      <%= link_to image.name, image_path(image)%>
+    </div>
+  </div>
+<% end %>

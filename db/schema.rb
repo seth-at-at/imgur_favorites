@@ -30,7 +30,6 @@ ActiveRecord::Schema.define(version: 20170726202517) do
   create_table "folders", force: :cascade do |t|
     t.string  "name"
     t.integer "user_id"
-    t.integer "favorite_id"
   end
 
   create_table "users", force: :cascade do |t|

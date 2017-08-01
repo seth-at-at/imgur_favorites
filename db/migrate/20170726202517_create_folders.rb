@@ -3,7 +3,6 @@ class CreateFolders < ActiveRecord::Migration[5.0]
     create_table :folders do |t|
       t.string :name
       t.integer :user_id
-      t.integer :favorite_id
     end
   end
 end

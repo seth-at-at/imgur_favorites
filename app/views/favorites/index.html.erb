@@ -1,0 +1,9 @@
+<center>
+  <div class="userFavorites">
+    <% @favorites.each do |f| %>
+      <div class="favorites" id="favorite#{f.id}">
+        <%= image_tag f.link %>
+      </div>
+    <% end %>
+  </div>
+</center>

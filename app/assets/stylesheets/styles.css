@@ -21,5 +21,75 @@ a:link {
 #loginButton {
   background-color: #1BB76E;
   font-size: 20px;
+  font-weight: bold;
+  border: 2px solid;
+  border-radius: 25px;
 }
 .homeLogo {text-align: center;}
+
+#are_user {
+  color: white;
+}
+
+#continue {background-color: #1BB76E;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+#back {
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.newFolder {
+  font-size: 20px;
+  background-color: #1BB76E;
+  text-align: center;
+  border: 5px solid #1BB76E;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 1px;
+}
+.newFolder > a {
+  background-color: #1BB76E;
+}
+
+.home_button {
+  font-size: 20px;
+  background-color: #1BB76E;
+  text-align: center;
+  border: 5px solid #1BB76E;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 2px;
+}
+
+.folder_links {
+  font-size: 20px;
+  background-color: #1BB76E;
+  text-align: center;
+  border: 5px solid #1BB76E;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 2px;
+
+}
+
+#userFolders {
+  text-align: center;
+  color: white;
+}
+
+.favorites {
+  display: block;
+  display: inline-block;
+}
+
+img {
+  width: 180px;
+height: 180px;
+line-height: 0;
+}

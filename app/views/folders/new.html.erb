@@ -1,0 +1,7 @@
+<div id="welcome_message">
+  <%= form_for @folder do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.submit "Create" %>
+  <% end %>
+</div>
