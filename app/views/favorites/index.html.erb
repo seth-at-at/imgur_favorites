@@ -1,5 +1,5 @@
 <center>
-  <div class="home_button">
+  <div class="home_button" tabindex="0">
     <%= link_to "Home", dashboard_path %>
   </div> <br>
   <hr>
@@ -7,18 +7,20 @@
     <% @favorites.each do |fa| %>
     <div class="dropdown">
       <button class="dropbtn">
-        <div class="favorites" id="#{fa.id}">
+        <div class="favorites" id="#{fa.id}" tabindex="0">
           <a href="<%= fa.link %>"><%= image_tag fa.link %></a>
         </div>
       </button>
-        <div class="dropdown-content">
+        <div class="dropdown-content" tabindex="0">
           <% @folders.each do |fo| %>
+          <div class="dps" tabindex="0">
             <%= link_to fo.name.upcase, folder_path(fo, favorite: fa.id) %>
+          </div>
           <% end %>
         </div>
       </div>
     <% end %>
-    <div class="paginating">
+    <div class="paginating" tabindex="0">
       <%= will_paginate @favorites %>
     </div>
   </div>

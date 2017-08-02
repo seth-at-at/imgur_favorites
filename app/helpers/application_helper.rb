@@ -25,8 +25,4 @@ module ApplicationHelper
         </g>
     </svg>'
   end
-
-  def users_folders(user)
-    return "You don't seem to have any folders, would you like to create one?" if user.folders.empty?
-  end
 end
