@@ -3,7 +3,6 @@
 
 * Application that allows you to sort images from the imgur website.
 * Account for [Imgur](https://www.imgur.com) is required to use the site.
-*
 
 ## To install/run locally:
 
