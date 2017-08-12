@@ -1,0 +1,171 @@
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: green;
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+body{ background-color: #141518; }
+.green{ background-color: #1BB76E; }
+.grey{ background-color: #34373C; }
+
+a:link {
+    color: black;
+    text-decoration: none;
+
+}
+
+a {
+  color: black;
+}
+
+#welcome_message {
+  font-size: 20px;
+  color: White;
+  text-align: center;
+  border: 5px solid gray;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+}
+
+#loginButton {
+  background-color: #1BB76E;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid;
+  border-radius: 25px;
+}
+.homeLogo {text-align: center;}
+
+#are_user {
+  color: white;
+}
+
+#continue {background-color: #1BB76E;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+#back {
+  background-color: red;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.newFolder {
+  font-size: 20px;
+  background-color: #1BB76E;
+  text-align: center;
+  border: 5px solid #1BB76E;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 1px;
+}
+.newFolder > a {
+  background-color: #1BB76E;
+}
+
+.home_button {
+  font-size: 20px;
+  background-color: #1BB76E;
+  text-align: center;
+  border: 5px solid #1BB76E;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 2px;
+}
+
+.folder_links {
+  font-size: 20px;
+  background-color: #1BB76E;
+  text-align: center;
+  border: 5px solid #1BB76E;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 2px;
+
+}
+
+#userFolders {
+  text-align: center;
+  color: white;
+}
+
+.favorites {
+  display: block;
+  display: inline-block;
+}
+
+img {
+  width: 180px;
+  height: 180px;
+  line-height: 0;
+  animation: 0;
+}
+
+.paginating {
+  background-color: #1BB76E;
+  border: 5px solid #1BB76E;
+  border-radius: 50px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
